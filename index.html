@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Responsive Portfolio Website Design</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Malik.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Malik Rizwan</h1>
+            <p>
+                I'm a web developer who loves to create beautiful and functional websites
+                for people who want to make a difference in the world.
+            </p>
+            <p>Currently I'm a learning backend, in which i learn how to
+            handle data of websites using nodeJs, Express , MongoDB and WordPress.</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/people/Malik-Muhammad-Rizwan/100086588023450/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/Malik-Rizwan0"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/+923249422392?text= I have seen your portfolio..."><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/malik-rizwan/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="./images/1Resume.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>ReactJs Dev</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bxl-wordpress'></i>
+                    <h3>WordPress Dev</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                Greeting there, welcome to my website! I'm Rizwan,
+                a passionate web developer who enjoys learning new technologies
+                and solving problems with code!
+            </p>
+            <p>
+                This website is my personal blog where I write about myself and 
+                my web development journey.
+            </p>
+            <p>
+                Thank you for visiting my website and getting to know me better. I hope you
+                enjoyed reading about myself and
+                found
+                them useful and informative.  If you have any feedback or
+                suggestions, please let me know. I'd love to hear from you.
+            </p>
+            
+            <a href="https://wa.me/+923249422392?text= I have seen your portfolio" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I can develop fully responsive and customize websites for you, using latest technologies and frameworks
+                     such as ReactJs , tailwind CSS etc which is SEO and UI  friendly.
+                </p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-palette'></i>
+                <h3>UI/UX Design</h3>
+                <p>
+                    With Adobe XD designing tool, I can design a visually appealing user interface for your website. My designs
+                     are adaptable, user-friendly, and search engine optimized. </p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-wordpress'></i>
+                <h3>WordPress</h3>
+                <p>I can develop Blog, Landing Pages, E-commerce Stores,Portfolios and Business Websites (fully functionality ,
+                    user-friendly, and search engine optimized) using wordpress.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Personal Portfolio</h4>
+                    <p>Develop in HTML ,CSS , Bootstrap & JavaScript having dark and light mood.</p>
+                    <a href="https://malik-rizwan0.github.io/Personal-Portfolio/" target="_blank" ><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>FrontEnd of a websie</h4>
+                    <p>Develop in ReactJs & Tailwind CSS having 9 full responsive web pages</p>
+                    <a href="https://polite-cannoli-147832.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- skill section design -->
+     <div class="container Skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <h2 class="row">
+            <div class="col-6 left">HTML <div class="bx bxl-html5"></div>
+        </div>
+            <div class="col-6"></div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6"></div>
+            <div class="col-6 right">CSS <div class="bx bxl-css3"></div>
+        </div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6 left">bootstrap <div class="bx bxl-bootstrap"></div>
+        </div>
+            <div class="col-6"></div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6"></div>
+            <div class="col-6 right">Tailwind CSS <div class="bx bxl-tailwind-css"></div>
+        </div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6 left">JavaScript <div class="bx bxl-javascript"></div>
+        </div>
+            <div class="col-6"></div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6"></div>
+            <div class="col-6 right">React <div class="bx bxl-react" ></div>
+        </div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6 left">Git <div class="bx bxl-git"></div>
+        </div>
+            <div class="col-6"></div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6"></div>
+            <div class="col-6 right">GitHub <div class=" bx bxl-github"></div>
+        </div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6 left">Adobe XD <div class="bx bxl-adobe"></div>
+        </div>
+            <div class="col-6"></div>
+        </h2>
+        <h2 class="row">
+            <div class="col-6"></div>
+            <div class="col-6 right">WordPress <div class="bx bxl-wordpress"></div>
+        </div>
+        </h2>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form onsubmit="sendEmail(); reset() ; return false;">
+            <div class="input-box">
+                <input type="text" id="userName" placeholder="Full Name">
+                <input type="email" id="userEmail" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="userPhone" placeholder="Mobile Number">
+                <input type="text" id="userSubject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="userMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 @Rizwan | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+     
+    <!-- Recive Email using stmpjs.com  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+
+</html>
