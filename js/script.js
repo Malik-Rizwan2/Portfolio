@@ -84,23 +84,7 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content, .left'
 
 
 /* ========= Stmp ========= */
-// function sendEmail() {
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "malikrizwan1076@gmail.com",
-//         Password : "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",
-//         To : 'develping.hut2022@gmail.com',
-//         From : "malikrizwan1076@gmail.com",
-//         Subject :  document.querySelector('#userSubject').value,
-//         Body : "Name :" + document.querySelector('#userName').value +
-//                 "<br> Phone #" + document.querySelector('#userPhone').value  + 
-//                 "<br> Message :" + document.querySelector('#userMessage').value
-//                 + 
-//                 "<br> Message :" + document.querySelector('#userEmail').value
-//     }).then(
-//       message => alert(message)
-//     );
-// }
+
 function sendEmail() {
     const userName = document.querySelector('#userName').value;
     const userEmail = document.querySelector('#userEmail').value;
