@@ -128,6 +128,7 @@ function sendEmail() {
         // Send email using Elastic Email
         Email.send({
             Host: "smtp.elasticemail.com",
+            Port: 587,
             Username: "malikrizwan1076@gmail.com",
             Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",  // Sensitive, for demo only
             To: 'develping.hut2022@gmail.com',
