@@ -123,17 +123,17 @@ function sendEmail() {
     const userSubject = document.getElementById('userSubject').value;
     const userMessage = document.getElementById('userMessage').value;
 
-    // Validate that all fields are filled (this is already ensured with required attribute in HTML)
+    // Ensure all fields are filled (required attributes are already handling this in the form)
     if (userName && userEmail && userPhone && userSubject && userMessage) {
-        // Send email using Elastic Email
+        // Use SMTP.js to send email
         Email.send({
-            Host: "smtp.elasticemail.com",
-            
-            Username: "malikrizwan1076@gmail.com",
-            Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",  // Sensitive, for demo only
-            To: 'develping.hut2022@gmail.com',
-            From: "malikrizwan1076@gmail.com",
-            Subject: userSubject,
+            SecureToken: "your_secure_token_from_smtpjs",  // Replace with your Secure Token if you are using this
+            Host: "smtp.elasticemail.com",                 // Or any other SMTP server
+            Username: "malikrizwan1076@gmail.com",         // Your SMTP username
+            Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C", // Your SMTP password or API key
+            To: 'develping.hut2022@gmail.com',             // Receiver's email
+            From: "malikrizwan1076@gmail.com",             // Your email
+            Subject: userSubject,                          // Subject
             Body: `
                 Name: ${userName} <br>
                 Phone #: ${userPhone} <br>
