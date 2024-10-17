@@ -236,18 +236,18 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form onsubmit="sendEmail(); reset() ; return false;">
-            <div class="input-box">
-                <input type="text" id="userName" placeholder="Full Name">
-                <input type="email" id="userEmail" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" id="userPhone" placeholder="Mobile Number">
-                <input type="text" id="userSubject" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="userMessage" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+        <form onsubmit="sendEmail(); reset(); return false;">
+    <div class="input-box">
+        <input type="text" id="userName" placeholder="Full Name" required>
+        <input type="email" id="userEmail" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="number" id="userPhone" placeholder="Mobile Number" required>
+        <input type="text" id="userSubject" placeholder="Email Subject" required>
+    </div>
+    <textarea id="userMessage" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
     </section>
 
     <!-- footer design -->
@@ -272,7 +272,7 @@
     <!-- custom js -->
     <script src="js/script.js"></script>
      
-    <!-- Recive Email using stmpjs.com  -->
+    <!-- Include SMTP.js from smtpjs.com -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
