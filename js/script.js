@@ -85,18 +85,51 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content, .left'
 
 /* ========= Stmp ========= */
 
-function sendEmail() {
-    const userName = document.querySelector('#userName').value;
-    const userEmail = document.querySelector('#userEmail').value;
-    const userPhone = document.querySelector('#userPhone').value;
-    const userSubject = document.querySelector('#userSubject').value;
-    const userMessage = document.querySelector('#userMessage').value;
+// function sendEmail() {
+//     const userName = document.querySelector('#userName').value;
+//     const userEmail = document.querySelector('#userEmail').value;
+//     const userPhone = document.querySelector('#userPhone').value;
+//     const userSubject = document.querySelector('#userSubject').value;
+//     const userMessage = document.querySelector('#userMessage').value;
 
+//     if (userName && userEmail && userPhone && userSubject && userMessage) {
+//         Email.send({
+//             Host: "smtp.elasticemail.com",
+//             Username: "malikrizwan1076@gmail.com",
+//             Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",
+//             To: 'develping.hut2022@gmail.com',
+//             From: "malikrizwan1076@gmail.com",
+//             Subject: userSubject,
+//             Body: `
+//                 Name: ${userName} <br>
+//                 Phone #: ${userPhone} <br>
+//                 Email: ${userEmail} <br>
+//                 Message: ${userMessage}
+//             `
+//         }).then(
+//             message => alert("Mail sent successfully: " + message)
+//         ).catch(
+//             error => alert("Error sending email: " + error)
+//         );
+//     } else {
+//         alert("Please fill all fields.");
+//     }
+// }
+function sendEmail() {
+    // Get form values
+    const userName = document.getElementById('userName').value;
+    const userEmail = document.getElementById('userEmail').value;
+    const userPhone = document.getElementById('userPhone').value;
+    const userSubject = document.getElementById('userSubject').value;
+    const userMessage = document.getElementById('userMessage').value;
+
+    // Validate that all fields are filled (this is already ensured with required attribute in HTML)
     if (userName && userEmail && userPhone && userSubject && userMessage) {
+        // Send email using Elastic Email
         Email.send({
             Host: "smtp.elasticemail.com",
             Username: "malikrizwan1076@gmail.com",
-            Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",
+            Password: "7C76524F36BE43747A4D1F9ACEF8A8D22A3C",  // Sensitive, for demo only
             To: 'develping.hut2022@gmail.com',
             From: "malikrizwan1076@gmail.com",
             Subject: userSubject,
@@ -107,11 +140,11 @@ function sendEmail() {
                 Message: ${userMessage}
             `
         }).then(
-            message => alert("Mail sent successfully: " + message)
+            message => alert("Mail sent successfully!")
         ).catch(
             error => alert("Error sending email: " + error)
         );
     } else {
-        alert("Please fill all fields.");
+        alert("Please fill all the fields.");
     }
 }
